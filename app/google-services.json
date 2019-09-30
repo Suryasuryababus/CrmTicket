@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "495653542446",
+    "firebase_url": "https://crmticket-6c7f8.firebaseio.com",
+    "project_id": "crmticket-6c7f8",
+    "storage_bucket": "crmticket-6c7f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:495653542446:android:7c926c08e00ea8b1565dbf",
+        "android_client_info": {
+          "package_name": "com.example.crmticket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "495653542446-thhudi3m4e31rig0mt96m0ejp2mas65q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.crmticket",
+            "certificate_hash": "fdeda2994d52cfe6c3e1d39a07c7b01b508b924e"
+          }
+        },
+        {
+          "client_id": "495653542446-g8i7i0bka17rjrgvmciqbae1jcpo7d44.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx_EQzjnQFmNidTTHz619vPU4KBd3PbMo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "495653542446-g8i7i0bka17rjrgvmciqbae1jcpo7d44.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

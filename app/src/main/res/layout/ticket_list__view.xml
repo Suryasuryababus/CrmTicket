@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:paddingBottom="2dp"
+        android:paddingEnd="5dp"
+        android:paddingTop="2dp"
+        android:animateLayoutChanges="true"
+        android:backgroundTint="@color/black"
+
+>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:elevation="10dp"
+            android:id="@+id/ticket"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangle"
+    >
+        <ImageView
+
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/empty_circle"
+                android:id="@+id/StatusCircle"
+
+        />
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+        >
+            <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ticket Titile"
+                    android:textSize="24sp"
+                    android:padding="10sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/title"
+                    android:gravity="left"
+                    android:shadowDx="4"
+                    android:shadowDy="4"
+                    android:shadowRadius="8"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+            />
+            <TextView
+                    android:text="1 days ago"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/time"
+                    android:layout_gravity="end"
+                    android:layout_alignBottom="@+id/ticket"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

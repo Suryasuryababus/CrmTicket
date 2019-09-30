@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CrmTicket</string>
+    <string name="title_activity_log_out">LogOut</string>
+    <string name="c_id">1002.OX4BNGVTHN3Y560387W95BZBOYKEW4</string>
+    <string name="iam_server_url">https://accounts.zoho.com</string>
+    <string name="redir_url">fieldbuddy://</string>
+    <string name="url_scheme">fieldbuddy</string>
+
+    <string name="title_activity_fullscreennotification">Fullscreennotification</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

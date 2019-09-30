@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.example.crmticket">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning"
+            tools:replace="android:allowBackup">
+        <activity android:name=".activity.Error">
+        </activity>
+        <activity android:name=".activity.AcceptedTicketDisplay">
+        </activity>
+        <activity android:name=".activity.Accepted">
+        </activity>
+        <activity android:name=".CrashReport">
+        </activity>
+        <activity
+                android:name=".Fullscreennotification"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:label="@string/title_activity_fullscreennotification"
+                android:theme="@style/FullscreenTheme">
+        </activity>
+
+        <service
+                android:name=".Services.RejectService"
+                android:enabled="true"
+                android:exported="true">
+        </service>
+        <service
+                android:name=".Services.AcceptService"
+                android:enabled="true"
+                android:exported="true">
+        </service>
+
+        <activity
+                android:name=".activity.Tickets"
+                android:launchMode="singleTask">
+        </activity> <!-- <activity -->
+        <!-- android:name=".LogOut" -->
+        <!-- android:label="@string/title_activity_log_out" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        <!-- </activity> -->
+        <activity
+                android:name=".activity.TicketDetails"
+                android:launchMode="singleTask"/> <!-- <activity android:name=".Login"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN"/> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <service
+                android:name=".Services.FirebaseMService"
+                android:enabled="true"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <meta-data
+                android:name="com.google.firebase.messaging.default_notification_icon"
+                android:resource="@drawable/baseline_assignment_turned_in_black_18dp"/>
+    </application>
+
+</manifest>
